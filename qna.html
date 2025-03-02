@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#F4F7FF] h-screen">
+    <section class="w-4/5 mx-auto">
+      <nav class="flex justify-around items-center bg-white rounded-xl p-5">
+        <div class="navbar flex gap-x-2">
+          <img src="./assets/logo.png" alt="" />
+          <a class="text-2xl"
+            >Dev<span class="text-2xl font-bold">Board</span></a
+          >
+        </div>
+        <div class="flex gap-x-20">
+          <a href="./index.html">
+            <button
+              id="Backhome"
+              class="bg-blue-800 p-4 rounded-xl text-white font-semibold w-[130px]"
+            >
+              Back to Desk
+            </button></a
+          >
+        </div>
+      </nav>
+      <h1 class="text-black font-bold text-2xl text-center mt-4">Blogs</h1>
+      <div class="space-y-10 mt-8">
+        <div class="space-y-2">
+          <div class="bg-white rounded-xl p-4">
+            <p class="font-bold text-black text-xl">
+              Question-1:What are the different ways to select an element in the
+              DOM?
+            </p>
+          </div>
+          <div class="bg-white rounded-xl p-4">
+            <p class="font-semibold text-2xl">
+              getElementById(), getElementsByClassName(),
+              getElementsByTagName(), querySelector(), querySelectorAll()
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="bg-white rounded-xl p-4">
+            <p class="font-bold text-black text-xl">
+              Question-2:What is the difference between innerHTML, innerText and
+              textContent?
+            </p>
+          </div>
+          <div class="bg-white rounded-xl p-4">
+            <p class="font-semibold text-2xl">
+              innerHTML: Returns/sets HTML with tags. innerText: Returns/sets
+              only visible text, ignore hidden elements. textContent:
+              Returns/sets all text, including hidden, without HTML tags.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="bg-white rounded-xl p-4">
+            <p class="font-bold text-black text-xl">
+              Question-3:What is event delegation in the DOM?
+            </p>
+          </div>
+          <div class="bg-white rounded-xl p-4">
+            <p class="font-semibold text-2xl">
+              Event Delegation is a technique where we don't add event listeners
+              to each child individually. Instead, we add it to the parent, and
+              the event listener works for all the children inside the parent.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="bg-white rounded-xl p-4">
+            <p class="font-bold text-black text-xl">
+              Question-4:What is event bubbling in the DOM?
+            </p>
+          </div>
+          <div class="bg-white rounded-xl p-4">
+            <p class="font-semibold text-2xl">
+              Event Bubbling is when an event occurs on an inner element and
+              then "bubbles" up to its parent element. The event triggers first
+              on the inner element, then moves to the parent.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="bg-white rounded-xl p-4">
+            <p class="font-bold text-black text-xl">
+              Question-4:How do you create,add,and remove elements using
+              JavaScript?
+            </p>
+          </div>
+          <div class="bg-white rounded-xl p-4">
+            <p class="font-semibold text-2xl">
+              Create: document.createElement() Add: appendChild() Remove:
+              removeChild() or remove()
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

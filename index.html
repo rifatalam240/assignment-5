@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>taskmeeter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center bg-[#F4F7FF] py-4 w-auto">
+    <section class="w-4/5">
+      <nav class="flex justify-around items-center bg-white rounded-xl p-2">
+        <div class="navbar flex gap-x-2">
+          <img src="./assets/logo.png" alt="" />
+          <a class="text-2xl"
+            >Dev<span class="text-2xl font-bold">Board</span></a
+          >
+        </div>
+        <div class="flex gap-x-20">
+          <div
+            class="flex gap-x-3 bg-blue-100 py-3 px-8 justify-center items-center rounded-full"
+          >
+            <img src="./assets/checkbox.png" alt="" />
+            <p id="increasebtn" class="text-2xl font-bold">23</p>
+          </div>
+          <div
+            onclick="hexacolor()"
+            class="flex justify-center items-center bg-blue-100 p-4 rounded-full"
+          >
+            <img src="./assets/theme-btn.png" alt="" />
+          </div>
+        </div>
+      </nav>
+      <main class="flex mt-4 gap-x-4">
+        <div class="w-full space-y-4">
+          <div
+            class="w-full flex justify-between items-center gap-x-10 bg-white px-6 rounded-xl py-3"
+          >
+            <div class="flex justify-between items-center space-x-6 w-full">
+              <div
+                class="bg-[#F4F7FF] flex justify-center items-center rounded-[12px] text-2xl px-12 py-5 space-x-4"
+              >
+                <div class="bg-white rounded-full p-3">
+                  <img src="./assets/checkbox.png" alt="" />
+                </div>
+                <div>
+                  <p>Task Assigned</p>
+                  <p id="decrasebtn" class="font-bold">06</p>
+                </div>
+              </div>
+              <div
+                id="qnapart"
+                class="flex justify-center items-center bg-gradient-to-r from-blue-800 to-blue-500 space-x-7 rounded-[12px] py-3 px-10"
+              >
+                <div><img src="./assets/board.png" alt="" /></div>
+                <div>
+                  <p class="text-white text-3xl font-bold px-12">
+                    Discover Something New Today!
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex justify-center items-center bg-[#F4F7FF] rounded-[12px] px-12 text-2xl py-5 space-x-4"
+              >
+                <div class="bg-white rounded-full p-3">
+                  <img src="./assets/calender.png" alt="" />
+                </div>
+                <div>
+                  <p class="font-bold">
+                    <span id="day">Wed</span> ,<br /><span id="datetime"
+                      >Jul 28 2025</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-3 gap-6 p-6 *:p-6 *:rounded-xl bg-white rounded-xl *:bg-[#F4F7FF]"
+          >
+            <div class="space-y-3 p-3 bg-blue-100 rounded-2xl">
+              <p class="bg-white px-4 py-2 rounded-xl inline-block text-2xl">
+                ShopEase
+              </p>
+              <h1 class="font-bold text-3xl title">Fix Mobile Button Issue</h1>
+              <p class="bg-white px-4 py-5 inline-block rounded-xl">
+                Debug using Chrome DevTools, check for overlapping elements,
+                <br />
+                and ensure onClick works properly and ensure onClick works
+                properly
+              </p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <p>Deadline</p>
+                  <p class="text-2xl font-bold">21 March 2025</p>
+                </div>
+                <button
+                  class="sixbtn btn bg-blue-800 text-white text-3xl rounded-xl hover:bg-blue-700"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="space-y-3 p-3 bg-blue-100 rounded-2xl">
+              <p class="bg-white px-4 py-2 rounded-xl inline-block text-2xl">
+                CloudSync
+              </p>
+              <h1 class="font-bold text-3xl title">Add Dark Mode</h1>
+              <p class="bg-white px-4 py-5 inline-block rounded-xl">
+                Debug using Chrome DevTools, check for overlapping elements,
+                <br />
+                and ensure onClick works properly and ensure onClick works
+                properly
+              </p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <p>Deadline</p>
+                  <p class="text-2xl font-bold">21 March 2025</p>
+                </div>
+                <button
+                  class="sixbtn btn bg-blue-800 text-white text-3xl rounded-xl hover:bg-blue-700"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="space-y-3 p-3 bg-blue-100 rounded-2xl">
+              <p class="bg-white px-4 py-2 rounded-xl inline-block text-2xl">
+                SwiftPay
+              </p>
+              <h1 class="font-bold text-3xl title">Optimize Home page </h1>
+              <p class="bg-white px-4 py-5 inline-block rounded-xl">
+                Debug using Chrome DevTools, check for overlapping elements,
+                <br />
+                and ensure onClick works properly and ensure onClick works
+                properly
+              </p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <p>Deadline</p>
+                  <p class="text-2xl font-bold">21 March 2025</p>
+                </div>
+                <button
+                  class="sixbtn btn bg-blue-800 text-white text-3xl rounded-xl hover:bg-blue-700"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="space-y-3 p-3 bg-blue-100 rounded-2xl">
+              <p class="bg-white px-4 py-2 rounded-xl inline-block text-2xl">
+                Meta
+              </p>
+              <h1 class="font-bold text-3xl title">Add new emoji 🤲</h1>
+              <p class="bg-white px-4 py-5 inline-block rounded-xl">
+                Debug using Chrome DevTools, check for overlapping elements,
+                <br />
+                and ensure onClick works properly and ensure onClick works
+                properly
+              </p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <p>Deadline</p>
+                  <p class="text-2xl font-bold">21 March 2025</p>
+                </div>
+                <button
+                  class="sixbtn btn bg-blue-800 text-white text-3xl rounded-xl hover:bg-blue-700"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="space-y-3 p-3 bg-blue-100 rounded-2xl">
+              <p class="bg-white px-4 py-2 rounded-xl inline-block text-2xl">
+                Google LLC
+              </p>
+              <h1 class="font-bold text-3xl title">Integrate OpenAI API</h1>
+              <p class="bg-white px-4 py-5 inline-block rounded-xl">
+                Debug using Chrome DevTools, check for overlapping elements,
+                <br />
+                and ensure onClick works properly and ensure onClick works
+                properly
+              </p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <p>Deadline</p>
+                  <p class="text-2xl font-bold">21 March 2025</p>
+                </div>
+                <button
+                  class="sixbtn btn bg-blue-800 text-white text-3xl rounded-xl hover:bg-blue-700"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="space-y-3 p-3 bg-blue-100 rounded-2xl">
+              <p class="bg-white px-4 py-2 rounded-xl inline-block text-2xl">
+                Glassdoar
+              </p>
+              <h1 class="font-bold text-3xl title">Improve Job searching</h1>
+              <p class="bg-white px-4 py-5 inline-block rounded-xl">
+                Debug using Chrome DevTools, check for overlapping elements,
+                <br />
+                and ensure onClick works properly and ensure onClick works
+                properly
+              </p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <p>Deadline</p>
+                  <p class="text-2xl font-bold">21 March 2025</p>
+                </div>
+                <button
+                  id="lastbtn"
+                  class="sixbtn btn bg-blue-800 text-white text-3xl rounded-xl hover:bg-blue-700"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right  -->
+        <div
+          class="flex flex-col w-[500px] justify-start items-center gap-y-3 bg-white rounded-xl py-3"
+        >
+          <div class="flex justify-center items-center gap-x-4">
+            <img src="./assets/activity.png" alt="" />
+            <p class="font-bold">Activity Log</p>
+          </div>
+
+          <button
+            id="clear-btn"
+            class="py-2 px-6 bg-blue-800 text-white rounded-2xl mt-2"
+          >
+            Clear History
+          </button>
+          <div
+            class="space-y-3 mt-3 bg-white rounded-xl p-3"
+            id="activitydiv"
+          ></div>
+        </div>
+      </main>
+    </section>
+    <script src="./assets/style.js"></script>
+  </body>
+
+  <!-- <style>
+    * {
+      border: 1px dotted;
+    }
+  </style> -->
+</html>
