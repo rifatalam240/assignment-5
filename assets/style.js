@@ -35,11 +35,14 @@ for (let i = 0; i < sixbtn.length; i++) {
       plusbtn.innerText = addition;
     }
     alert("Board updated Successfully");
+    if (parseInt(minusbtn.innerHTML) < 1) {
+      alert("Congrates!!! you have completed all the current task");
+    }
   });
 }
-document.getElementById("lastbtn").addEventListener("click", function () {
-  alert("Congrates!!! you have completed all the current task");
-});
+// document.getElementById("lastbtn").addEventListener("click", function () {
+//   alert("Congrates!!! you have completed all the current task");
+// });
 printActivity();
 let clearbtn = document.getElementById("clear-btn");
 clearbtn.addEventListener("click", function () {
